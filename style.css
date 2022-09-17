@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap");
+
+/*===========Basic Styling==========*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Manrope', sans-serif;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.1rem;
+}
+main{
+    display: flex;
+}
+/*=============Dashboard==============*/
+.dashboard_container{
+    width: 250px;
+    height: 100%;
+    padding: 1rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.branding{
+    display: flex;
+}
+.logo_branding{
+    padding-left: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.container_links{
+    margin-top:1.5rem;
+    display: flex;
+    align-items: center;    
+}
+.container_links ul li{
+    padding-top:1.2rem;
+    position: relative;
+}
+.container_links ul li i{
+    width: 1vw;
+    opacity: 20%;
+}
+.container_links ul li a{
+    padding-left: 1.5rem;
+}
+.active{
+    font-weight: 700;
+}
+.dropdown{
+    display: block;
+    padding-left:1rem;
+    padding-bottom: 1rem;
+}
+.dropdown_menu{
+    padding-top: 2rem;
+}
+.dropdown li {
+    line-height: 0.5rem;
+}
+.dropdown li a{
+    font-size:0.9rem;
+    opacity: 60%;
+    font-weight: 400;
+}
+.dropdown_arrow{
+    position: absolute;
+    right: -40px;
+    top: 25px;
+    cursor: pointer;
+}
+
+/*==============SearchBar Block==============*/
+.searchbar_content{
+    background-color: antiquewhite;
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}

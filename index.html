@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>B2Brain Dashboard</title>
+    <!--CSS Style Sheet-->
+    <link rel="stylesheet" href="./style.css" />
+    <!--Font Awesome CDN Link-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <main class="content">
+    <!--Dashboard-->
+    <nav>
+      <aside class="dashboard_container">
+        <div class="branding">
+          <img src="./Assests/B2Brain.png" alt="logo" class="logo" />
+          <h1 class="logo_branding">B2Brain</h1>
+        </div>
+        <div class="container_links">
+          <ul>
+            <li><i class="fa-solid fa-house"></i>
+            <a href="#"class="active">Dashboard</a>
+            </li>
+            <li><i class="fa-regular fa-star"></i>
+            <a href="#">Intels</a>
+            </li>
+            <li><i class="fa-regular fa-user"></i>
+            <a href="#">Leads</a>
+            </li>
+            <li><i class="fa-regular fa-building"></i>
+            <a href="#">Accounts</a>
+            <i class="fa-solid fa-chevron-down dropdown_arrow" id="account_arrow"></i>
+            <ul class="dropdown">
+              <li><a href="#">Manage all</a></li>
+              <li><a href="#">Track new accounts</a></li>
+              <li><a href="#">Bulk Import</a></li>
+            </ul>
+          </li>
+          <li><i class="fa-solid fa-gear"></i>
+            <a href="#">Preferences</a>
+            <i class="fa-solid fa-chevron-down dropdown_arrow" id="preferences_arrow"></i>
+            <ul class="dropdown">
+              <li><a href="#">Product Focus</a></li>
+              <li><a href="#">Intel Preferences</a></li>
+              <li><a href="#">Lead Person</a></li>
+            </ul>
+          </li>
+          <li><i class="fa-solid fa-link"></i></i>
+            <a href="#">Integrations</a>
+          </li>
+          <li><i class="fa-solid fa-users"></i></i>
+              <a href="#">Team</a>
+          </li>
+          <li><i class="fa-solid fa-messages"></i></i>
+              <a href="#">Help/Support</a>
+          </li>
+          </ul>
+        </div>
+      </aside>
+    </nav>
+    <!--SearchBar-->
+    <section>
+    <div class="searchbar_content">
+      <div class="searchbar_left">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" placeholder="Search by account name or website">
+      </div>
+      <div class="searchbar_right">
+        <i class="fa-regular fa-bell"></i>
+        <img src="./Assests/Logo.png" alt="userImg">
+      </div>
+    </div>
+  </section>
+  </main>
+    <!--=============Script File============-->
+    <script src="./script.js"></script>
+  </body>
+</html>
