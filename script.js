@@ -1,7 +1,17 @@
-const AccountArrow = document.getElementById('account_arrow');
-const PreferenceArrow = document.getElementById('preferences_arrow');
-const Dropdown = document.querySelector('.dropdown');
+const AccountDropdown = document.querySelector('.account_wrapper');
+const PreferenceDropdown = document.querySelector('.preference_wrapper');
+const AccountCollapase = document.querySelector('.account_collapase');
+const PreferenceCollapase = document.querySelector('.preference_collapase')
+const AccountArrow = document.querySelector('.account_arrow');
+const PreferenecArrow = document.querySelector('.preference_arrow');
 
 
+AccountCollapase.addEventListener('click', () => {
+    AccountArrow.classList.toggle('dropdown_rotate');
+    AccountDropdown.classList.toggle('block');
+} )
 
-AccountArrow.addEventListener('click',DropdownCollapse);
+PreferenceCollapase.addEventListener('click', () => {
+    PreferenecArrow.classList.toggle('dropdown_rotate');
+    PreferenceDropdown.classList.toggle('block');
+})
