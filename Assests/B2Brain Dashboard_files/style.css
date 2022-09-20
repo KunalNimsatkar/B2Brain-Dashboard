@@ -95,31 +95,6 @@ input[type="search"]::-webkit-search-results-decoration {
   width: 1vw;
   opacity: 20%;
 }
-.intels_badges,
-.leads_badges {
-  display: flex;
-  align-items: center;
-}
-.intels_badges p,
-.leads_badges p {
-  margin-left: 4rem;
-  font-size: 0.8rem;
-  font-weight: bold;
-  background-color: #ff7474;
-  padding: 0 0.5rem;
-  border-radius: 14px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: var(--primary);
-}
-.leads_badges p {
-  margin-left: 3.8rem;
-}
-.container_links .dashboard,
-.container_links .help {
-  padding: 0 0.6rem;
-}
 .container_links ul li a {
   padding-left: 1.3rem;
 }
@@ -142,7 +117,7 @@ input[type="search"]::-webkit-search-results-decoration {
   left: -38px;
   top: 56px;
   transform: rotate(90deg);
-  transition: all 4s;
+  transition:all 4s;
 }
 .dropdown .dropdown_menu {
   padding-top: 3rem;

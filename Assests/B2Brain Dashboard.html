@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<!-- saved from url=(0023)http://localhost:5500/# -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>B2Brain Dashboard</title>
+  <!--CSS Style Sheet-->
+  
+  
+  <!--Font Awesome CDN Link-->
+  
+<link rel="stylesheet" href="./B2Brain Dashboard_files/style.css"><link rel="icon" type="image/x-icon" href="./B2Brain Dashboard_files/B2Brain.png"><link rel="stylesheet" href="./B2Brain Dashboard_files/all.min.css"></head>
+
+<body>
+  <main class="content">
+    <!--Dashboard-->
+    <section class="side_container">
+      <div class="container">
+        <div class="branding">
+          <img src="./B2Brain Dashboard_files/B2Brain.png" alt="logo" class="logo">
+          <h1 class="logo_branding">B2Brain</h1>
+        </div>
+        <div class="container_links">
+          <ul id="links">
+            <li><img src="./B2Brain Dashboard_files/home.png" alt="home">
+              <a href="http://localhost:5500/#" class="active">Dashboard</a>
+            </li>
+            <li><i class="fa-regular fa-star"></i>
+              <a href="http://localhost:5500/#">Intels</a>
+            </li>
+            <li><i class="fa-regular fa-user"></i>
+              <a href="http://localhost:5500/#">Leads</a>
+            </li>
+            <li><i class="fa-regular fa-building"></i>
+              <a href="http://localhost:5500/#" class="account_collapase">Accounts
+              <i class="fa-solid fa-chevron-down account_arrow"></i></a>
+              <ul class="dropdown account_wrapper">
+                <li><a href="http://localhost:5500/#">Manage all</a></li>
+                <li><a href="http://localhost:5500/#">Track new accounts</a></li>
+                <li><a href="http://localhost:5500/#">Bulk Import</a></li>
+              </ul>
+            </li>
+            <li><i class="fa-solid fa-gear"></i>
+              <a href="http://localhost:5500/#" class="preference_collapase">Preferences
+              <i class="fa-solid fa-chevron-down preference_arrow"></i></a>
+              <ul class="dropdown preference_wrapper">
+                <li><a href="http://localhost:5500/#">Product Focus</a></li>
+                <li><a href="http://localhost:5500/#">Intel Preferences</a></li>
+                <li><a href="http://localhost:5500/#">Lead Person</a></li>
+              </ul>
+            </li>
+            <li><i class="fa-solid fa-link"></i>
+              <a href="http://localhost:5500/#">Integrations</a>
+            </li>
+            <li><i class="fa-solid fa-users"></i>
+              <a href="http://localhost:5500/#">Team</a>
+            </li>
+            <li><img src="./B2Brain Dashboard_files/comments-alt.png" alt="help">
+              <a href="http://localhost:5500/#">Help/Support</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="wrapper">
+      <!--SearchBar-->
+      <div class="searchbar">
+      <div class="searchBar_content">
+        <div class="searchbar_left">
+          <i class="fa-solid fa-magnifying-glass searchIcon"></i>
+          <input type="search" placeholder="Search by account name or website" id="search">
+        </div>
+        <div class="searchBar_right">
+          <i class="fa-regular fa-bell"></i>
+          <img src="./B2Brain Dashboard_files/Logo.png" alt="userImg" class="userImg">
+        </div>
+      </div>
+    </div>
+      <!-- hero content -->
+      <div class="hero_img">
+        <img src="./B2Brain Dashboard_files/hero-image.png" alt="heroimg" class="img1">
+        <img src="./B2Brain Dashboard_files/hero-image2.png" alt="heroimg2" class="img2">
+        <img src="./B2Brain Dashboard_files/hero-image3.png" alt="heroimg3" class="img3">
+      </div>
+      <div class="user_wrapper hidden">
+        <div class="user_container">
+         <h1>Similar accounts</h1>
+         <div class="user_section">
+        </div>
+        </div>
+        <div class="userOption">
+          <h1>Quick Actions</h1>
+          <ul>
+            <li>Track new account</li>
+            <li>Bulk track accounts</li>
+            <li>Manage accounts</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!--=============Script File============-->
+  <script src="./B2Brain Dashboard_files/script.js.download"></script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+<style>.tb_button {padding:1px;cursor:pointer;border-right: 1px solid #8b8b8b;border-left: 1px solid #FFF;border-bottom: 1px solid #fff;}.tb_button.hover {borer:2px outset #def; background-color: #f8f8f8 !important;}.ws_toolbar {z-index:100000} .ws_toolbar .ws_tb_btn {cursor:pointer;border:1px solid #555;padding:3px}   .tb_highlight{background-color:yellow} .tb_hide {visibility:hidden} .ws_toolbar img {padding:2px;margin:0px}</style></body></html>
